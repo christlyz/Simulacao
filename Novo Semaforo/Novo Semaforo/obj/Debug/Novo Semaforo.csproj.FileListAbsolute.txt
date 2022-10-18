@@ -1,0 +1,12 @@
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\bin\Debug\Novo Semaforo.exe.config
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\bin\Debug\Novo Semaforo.exe
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\bin\Debug\Novo Semaforo.pdb
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.csproj.AssemblyReference.cache
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.Cruzamento.resources
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.viaUnica.resources
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.Properties.Resources.resources
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.csproj.GenerateResource.cache
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.csproj.CoreCompileInputs.cache
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.exe
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.pdb
+C:\Users\christian.santos\AccessibilityWay\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.menu.resources
