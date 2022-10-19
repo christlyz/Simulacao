@@ -171,7 +171,7 @@ namespace Novo_Semaforo
             // picCarroBranco
             // 
             this.picCarroBranco.Image = ((System.Drawing.Image)(resources.GetObject("picCarroBranco.Image")));
-            this.picCarroBranco.Location = new System.Drawing.Point(1053, 151);
+            this.picCarroBranco.Location = new System.Drawing.Point(895, 92);
             this.picCarroBranco.Name = "picCarroBranco";
             this.picCarroBranco.Size = new System.Drawing.Size(128, 67);
             this.picCarroBranco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -368,7 +368,8 @@ namespace Novo_Semaforo
             // 
             // timer3
             // 
-            this.timer3.Interval = 10000;
+            this.timer3.Interval = 5000;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // Cruzamento
             // 
