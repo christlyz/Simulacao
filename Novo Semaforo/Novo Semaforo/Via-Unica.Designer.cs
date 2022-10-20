@@ -51,9 +51,10 @@ namespace Novo_Semaforo
             // picCarro
             // 
             this.picCarro.Image = ((System.Drawing.Image)(resources.GetObject("picCarro.Image")));
-            this.picCarro.Location = new System.Drawing.Point(506, 673);
+            this.picCarro.Location = new System.Drawing.Point(380, 547);
+            this.picCarro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picCarro.Name = "picCarro";
-            this.picCarro.Size = new System.Drawing.Size(150, 172);
+            this.picCarro.Size = new System.Drawing.Size(112, 140);
             this.picCarro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCarro.TabIndex = 0;
             this.picCarro.TabStop = false;
@@ -61,9 +62,10 @@ namespace Novo_Semaforo
             // picVerde
             // 
             this.picVerde.Image = ((System.Drawing.Image)(resources.GetObject("picVerde.Image")));
-            this.picVerde.Location = new System.Drawing.Point(506, 160);
+            this.picVerde.Location = new System.Drawing.Point(380, 130);
+            this.picVerde.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picVerde.Name = "picVerde";
-            this.picVerde.Size = new System.Drawing.Size(114, 50);
+            this.picVerde.Size = new System.Drawing.Size(86, 41);
             this.picVerde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picVerde.TabIndex = 1;
             this.picVerde.TabStop = false;
@@ -71,9 +73,10 @@ namespace Novo_Semaforo
             // picAmarelo
             // 
             this.picAmarelo.Image = ((System.Drawing.Image)(resources.GetObject("picAmarelo.Image")));
-            this.picAmarelo.Location = new System.Drawing.Point(506, 160);
+            this.picAmarelo.Location = new System.Drawing.Point(380, 130);
+            this.picAmarelo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picAmarelo.Name = "picAmarelo";
-            this.picAmarelo.Size = new System.Drawing.Size(114, 50);
+            this.picAmarelo.Size = new System.Drawing.Size(86, 41);
             this.picAmarelo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAmarelo.TabIndex = 2;
             this.picAmarelo.TabStop = false;
@@ -81,9 +84,10 @@ namespace Novo_Semaforo
             // picVermelho
             // 
             this.picVermelho.Image = ((System.Drawing.Image)(resources.GetObject("picVermelho.Image")));
-            this.picVermelho.Location = new System.Drawing.Point(506, 160);
+            this.picVermelho.Location = new System.Drawing.Point(380, 130);
+            this.picVermelho.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picVermelho.Name = "picVermelho";
-            this.picVermelho.Size = new System.Drawing.Size(114, 50);
+            this.picVermelho.Size = new System.Drawing.Size(86, 41);
             this.picVermelho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picVermelho.TabIndex = 3;
             this.picVermelho.TabStop = false;
@@ -91,9 +95,10 @@ namespace Novo_Semaforo
             // picPedestre
             // 
             this.picPedestre.Image = ((System.Drawing.Image)(resources.GetObject("picPedestre.Image")));
-            this.picPedestre.Location = new System.Drawing.Point(283, 313);
+            this.picPedestre.Location = new System.Drawing.Point(212, 254);
+            this.picPedestre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picPedestre.Name = "picPedestre";
-            this.picPedestre.Size = new System.Drawing.Size(89, 103);
+            this.picPedestre.Size = new System.Drawing.Size(67, 84);
             this.picPedestre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPedestre.TabIndex = 4;
             this.picPedestre.TabStop = false;
@@ -101,9 +106,10 @@ namespace Novo_Semaforo
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(378, 284);
+            this.label1.Location = new System.Drawing.Point(284, 231);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(346, 145);
+            this.label1.Size = new System.Drawing.Size(260, 118);
             this.label1.TabIndex = 5;
             this.label1.Text = "||||||||||||";
             // 
@@ -114,9 +120,10 @@ namespace Novo_Semaforo
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(283, 422);
+            this.button1.Location = new System.Drawing.Point(212, 343);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 39);
+            this.button1.Size = new System.Drawing.Size(67, 32);
             this.button1.TabIndex = 6;
             this.button1.Text = "Botão";
             this.button1.UseVisualStyleBackColor = true;
@@ -124,9 +131,10 @@ namespace Novo_Semaforo
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(283, 467);
+            this.button2.Location = new System.Drawing.Point(212, 379);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 41);
+            this.button2.Size = new System.Drawing.Size(67, 33);
             this.button2.TabIndex = 7;
             this.button2.Text = "Cartão";
             this.button2.UseVisualStyleBackColor = true;
@@ -139,9 +147,9 @@ namespace Novo_Semaforo
             // 
             // viaUnica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1062, 673);
+            this.ClientSize = new System.Drawing.Size(796, 547);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.picVermelho);
@@ -150,6 +158,8 @@ namespace Novo_Semaforo
             this.Controls.Add(this.picPedestre);
             this.Controls.Add(this.picCarro);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "viaUnica";
             this.Text = "Via Única";
             this.Load += new System.EventHandler(this.viaUnica_Load);
