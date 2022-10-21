@@ -23,3 +23,15 @@ C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simula
 C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simulacao-AccWay.csproj.CoreCompileInputs.cache
 C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.exe
 C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.pdb
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\bin\Debug\Novo Semaforo.exe.config
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\bin\Debug\Novo Semaforo.exe
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\bin\Debug\Novo Semaforo.pdb
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simulacao-AccWay.csproj.AssemblyReference.cache
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.Cruzamento.resources
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.menu.resources
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.viaUnica.resources
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.Properties.Resources.resources
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simulacao-AccWay.csproj.GenerateResource.cache
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simulacao-AccWay.csproj.CoreCompileInputs.cache
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.exe
+\\Server\c#-vespertino\christian.santos\Desktop\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.pdb

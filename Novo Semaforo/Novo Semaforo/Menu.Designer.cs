@@ -37,8 +37,6 @@ namespace Novo_Semaforo
             this.picCruzamento2 = new System.Windows.Forms.PictureBox();
             this.picCruzamento1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.botaoMenu1 = new Novo_Semaforo.BotaoMenu();
-            this.botaoMenu2 = new Novo_Semaforo.BotaoMenu();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picViaUnica1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picViaUnica2)).BeginInit();
@@ -50,7 +48,7 @@ namespace Novo_Semaforo
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(21, 72);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(469, 427);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -62,7 +60,7 @@ namespace Novo_Semaforo
             this.picViaUnica1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.picViaUnica1.Image = ((System.Drawing.Image)(resources.GetObject("picViaUnica1.Image")));
             this.picViaUnica1.Location = new System.Drawing.Point(551, 123);
-            this.picViaUnica1.Margin = new System.Windows.Forms.Padding(2);
+            this.picViaUnica1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picViaUnica1.Name = "picViaUnica1";
             this.picViaUnica1.Size = new System.Drawing.Size(192, 60);
             this.picViaUnica1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -76,7 +74,7 @@ namespace Novo_Semaforo
             this.picViaUnica2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.picViaUnica2.Image = ((System.Drawing.Image)(resources.GetObject("picViaUnica2.Image")));
             this.picViaUnica2.Location = new System.Drawing.Point(551, 123);
-            this.picViaUnica2.Margin = new System.Windows.Forms.Padding(2);
+            this.picViaUnica2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picViaUnica2.Name = "picViaUnica2";
             this.picViaUnica2.Size = new System.Drawing.Size(192, 60);
             this.picViaUnica2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,7 +102,7 @@ namespace Novo_Semaforo
             // 
             this.picCruzamento2.Image = ((System.Drawing.Image)(resources.GetObject("picCruzamento2.Image")));
             this.picCruzamento2.Location = new System.Drawing.Point(551, 343);
-            this.picCruzamento2.Margin = new System.Windows.Forms.Padding(2);
+            this.picCruzamento2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picCruzamento2.Name = "picCruzamento2";
             this.picCruzamento2.Size = new System.Drawing.Size(192, 60);
             this.picCruzamento2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,7 +115,7 @@ namespace Novo_Semaforo
             // 
             this.picCruzamento1.Image = ((System.Drawing.Image)(resources.GetObject("picCruzamento1.Image")));
             this.picCruzamento1.Location = new System.Drawing.Point(551, 343);
-            this.picCruzamento1.Margin = new System.Windows.Forms.Padding(2);
+            this.picCruzamento1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picCruzamento1.Name = "picCruzamento1";
             this.picCruzamento1.Size = new System.Drawing.Size(192, 60);
             this.picCruzamento1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -140,45 +138,12 @@ namespace Novo_Semaforo
             this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
             this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
             // 
-            // botaoMenu1
-            // 
-            this.botaoMenu1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.botaoMenu1.FlatAppearance.BorderSize = 0;
-            this.botaoMenu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botaoMenu1.ForeColor = System.Drawing.Color.Black;
-            this.botaoMenu1.Location = new System.Drawing.Point(562, 72);
-            this.botaoMenu1.Name = "botaoMenu1";
-            this.botaoMenu1.Size = new System.Drawing.Size(150, 40);
-            this.botaoMenu1.TabIndex = 11;
-            this.botaoMenu1.Text = "botaoMenu1";
-            this.botaoMenu1.UseVisualStyleBackColor = false;
-            // 
-            // botaoMenu2
-            // 
-            this.botaoMenu2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.botaoMenu2.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.botaoMenu2.BorderColor = System.Drawing.Color.DarkMagenta;
-            this.botaoMenu2.BorderRadius = 40;
-            this.botaoMenu2.BorderSize = 2;
-            this.botaoMenu2.FlatAppearance.BorderSize = 0;
-            this.botaoMenu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botaoMenu2.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.botaoMenu2.Location = new System.Drawing.Point(562, 12);
-            this.botaoMenu2.Name = "botaoMenu2";
-            this.botaoMenu2.Size = new System.Drawing.Size(150, 40);
-            this.botaoMenu2.TabIndex = 12;
-            this.botaoMenu2.Text = "botaoMenu2";
-            this.botaoMenu2.TextColor = System.Drawing.Color.DarkMagenta;
-            this.botaoMenu2.UseVisualStyleBackColor = false;
-            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(796, 547);
-            this.Controls.Add(this.botaoMenu2);
-            this.Controls.Add(this.botaoMenu1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.picCruzamento2);
             this.Controls.Add(this.picCruzamento1);
@@ -187,9 +152,10 @@ namespace Novo_Semaforo
             this.Controls.Add(this.picViaUnica1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "menu";
             this.Text = "Accessibility Way";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menu_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picViaUnica1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picViaUnica2)).EndInit();
@@ -208,8 +174,6 @@ namespace Novo_Semaforo
         private System.Windows.Forms.PictureBox picCruzamento2;
         private System.Windows.Forms.PictureBox picCruzamento1;
         private System.Windows.Forms.Label label2;
-        private BotaoMenu botaoMenu1;
-        private BotaoMenu botaoMenu2;
     }
 }
 
