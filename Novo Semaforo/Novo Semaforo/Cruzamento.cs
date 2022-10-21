@@ -13,7 +13,6 @@ namespace Novo_Semaforo
     public partial class Cruzamento : Form
     {
         int caso = 0;
-        int tempo = 0;
         public Cruzamento()
         {
             InitializeComponent();
@@ -43,13 +42,13 @@ namespace Novo_Semaforo
                     caso = 1;
                     break;
                 case 1:
-                    if(picVerde1.Visible == true)
+                    if (picVerde1.Visible == true)
                     {
                         picVermelho1.Visible = false;
                         picAmarelo1.Visible = true;
                         picVerde1.Visible = false;
                     }
-                    else if(picVerde2.Visible == true)
+                    else if (picVerde2.Visible == true)
                     {
                         picVermelho2.Visible = false;
                         picAmarelo2.Visible = true;
@@ -69,7 +68,7 @@ namespace Novo_Semaforo
                         picAmarelo2.Visible = false;
                         picVerde2.Visible = true;
                     }
-                    else if(picAmarelo2.Visible == true)
+                    else if (picAmarelo2.Visible == true)
                     {
                         picVermelho2.Visible = true;
                         picAmarelo2.Visible = false;
@@ -92,17 +91,7 @@ namespace Novo_Semaforo
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            if ((picVerde1.Visible == true && picVermelho2.Visible == true) || picVermelho1.Visible == true && (picCarroPreto.Location.Y > 469 || picCarroPreto.Location.Y <= 450))
-            {
-                picCarroPreto.Top -= 3;
-            }
-            else if ((picVerde2.Visible == true && picVermelho1.Visible == true) || (picVermelho1.Visible && picVermelho2.Visible) == true && (picCarroBranco.Location.X > 851 || picCarroBranco.Location.X < 895))
-            {
-                picCarroBranco.Left -= 3;
-                picPedestre.Left += 1;
-            }
-            
-            else if (picVermelho1.Visible == true && picVermelho2.Visible == true)
+            if (picVermelho1.Visible == true && picVermelho2.Visible == true)
             {
                 picCadeirante.Top += 1;
                 picPedestre.Left += 1;
@@ -116,13 +105,23 @@ namespace Novo_Semaforo
                 picCarroBranco.Left -= 2;
             }
 
-            if(picVermelho1.Visible == true && picCarroPreto.Location.Y <= 455 && picCarroPreto.Location.Y > 450)
+            if (picVermelho1.Visible == true && picCarroPreto.Location.Y <= 455 && picCarroPreto.Location.Y > 450)
             {
                 picCarroPreto.Top -= 0;
             }
-            else if (picVermelho2.Visible == true && picCarroBranco.Location.Y <= 851 && picCarroBranco.Location.Y > 895)
+            else if ((picVerde1.Visible == true && picVermelho2.Visible == true) || picVermelho1.Visible == true && (picCarroPreto.Location.Y > 469 || picCarroPreto.Location.Y <= 450))
+            {
+                picCarroPreto.Top -= 3;
+            }
+
+            if (picVermelho2.Visible == true && picCarroBranco.Location.X <= 851 && picCarroBranco.Location.X > 895)
             {
                 picCarroBranco.Left -= 0;
+            }
+            else if ((picVerde2.Visible == true && picVermelho1.Visible == true) || (picVermelho1.Visible && picVermelho2.Visible) == true && (picCarroBranco.Location.X > 851 || picCarroBranco.Location.X < 865))
+            {
+                picCarroBranco.Left -= 3;
+                picPedestre.Left += 1;
             }
 
             if (picCarroPreto.Location.Y < -133)
@@ -149,9 +148,6 @@ namespace Novo_Semaforo
             picVermelho2.Visible = true;
             picAmarelo2.Visible = false;
             picVerde2.Visible = false;
-
-
-
         }
     }
 }

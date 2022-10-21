@@ -22,7 +22,7 @@ namespace Novo_Semaforo
         {
             switch (caso)
             {
-    //Tempos do Botão//
+                //Tempos do Botão//
                 case 1:
                     timer1.Interval = 5000;
                     caso = 2;
@@ -45,7 +45,7 @@ namespace Novo_Semaforo
                     caso = 0;
                     break;
 
-    //Tempos do Cartão//
+                //Tempos do Cartão//
                 case 5:
                     timer1.Interval = 3000;
                     caso = 6;
@@ -89,29 +89,40 @@ namespace Novo_Semaforo
         private void timer2_Tick(object sender, EventArgs e)
         {
             if (picVermelho.Visible == true)
-            {
                 picPedestre.Left += 1;
-            }
+
+            if (picVermelho.Visible == true && (picCarro.Location.Y == 422 && picCarro.Location.Y > 388))
+                picCarro.Top -= 0;
+
+            else if (picVermelho.Visible == true && (picCarro.Location.Y > 422 || picCarro.Location.Y < 388))
+                picCarro.Top -= 2;
 
             else if (picAmarelo.Visible == true)
-            {
                 picCarro.Top -= 2;
-            }
 
-            else
-            {
+            else if (picVerde.Visible == true)
                 picCarro.Top -= 3;
-            }
 
             if (picCarro.Location.Y < -172)
-            {
                 picCarro.Location = new Point(picVerde.Location.X, 673);
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             caso = 5;
+        }
+
+        private void btnReinicia_Click(object sender, EventArgs e)
+        {
+            picCarro.Location = new Point(picVerde.Location.X, 673);
+            picPedestre.Location = new Point(212, 254);
+
+            if ((picVermelho.Visible || picAmarelo.Visible) == true)
+            {
+                picVerde.Visible = true;
+                picAmarelo.Visible = false;
+                picVermelho.Visible = false;
+            }
         }
     }
 }

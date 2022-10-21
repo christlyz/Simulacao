@@ -37,6 +37,8 @@ namespace Novo_Semaforo
             this.picCruzamento2 = new System.Windows.Forms.PictureBox();
             this.picCruzamento1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.botaoMenu1 = new Novo_Semaforo.BotaoMenu();
+            this.botaoMenu2 = new Novo_Semaforo.BotaoMenu();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picViaUnica1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picViaUnica2)).BeginInit();
@@ -57,6 +59,7 @@ namespace Novo_Semaforo
             // 
             // picViaUnica1
             // 
+            this.picViaUnica1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.picViaUnica1.Image = ((System.Drawing.Image)(resources.GetObject("picViaUnica1.Image")));
             this.picViaUnica1.Location = new System.Drawing.Point(551, 123);
             this.picViaUnica1.Margin = new System.Windows.Forms.Padding(2);
@@ -70,6 +73,7 @@ namespace Novo_Semaforo
             // 
             // picViaUnica2
             // 
+            this.picViaUnica2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.picViaUnica2.Image = ((System.Drawing.Image)(resources.GetObject("picViaUnica2.Image")));
             this.picViaUnica2.Location = new System.Drawing.Point(551, 123);
             this.picViaUnica2.Margin = new System.Windows.Forms.Padding(2);
@@ -84,10 +88,11 @@ namespace Novo_Semaforo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(588, 136);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 28);
+            this.label1.Size = new System.Drawing.Size(114, 29);
             this.label1.TabIndex = 7;
             this.label1.Text = "Via Única";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -124,10 +129,10 @@ namespace Novo_Semaforo
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(570, 360);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 28);
+            this.label2.Size = new System.Drawing.Size(142, 29);
             this.label2.TabIndex = 10;
             this.label2.Text = "Cruzamento";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -135,12 +140,45 @@ namespace Novo_Semaforo
             this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
             this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
             // 
+            // botaoMenu1
+            // 
+            this.botaoMenu1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.botaoMenu1.FlatAppearance.BorderSize = 0;
+            this.botaoMenu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botaoMenu1.ForeColor = System.Drawing.Color.Black;
+            this.botaoMenu1.Location = new System.Drawing.Point(562, 72);
+            this.botaoMenu1.Name = "botaoMenu1";
+            this.botaoMenu1.Size = new System.Drawing.Size(150, 40);
+            this.botaoMenu1.TabIndex = 11;
+            this.botaoMenu1.Text = "botaoMenu1";
+            this.botaoMenu1.UseVisualStyleBackColor = false;
+            // 
+            // botaoMenu2
+            // 
+            this.botaoMenu2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.botaoMenu2.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.botaoMenu2.BorderColor = System.Drawing.Color.DarkMagenta;
+            this.botaoMenu2.BorderRadius = 40;
+            this.botaoMenu2.BorderSize = 2;
+            this.botaoMenu2.FlatAppearance.BorderSize = 0;
+            this.botaoMenu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botaoMenu2.ForeColor = System.Drawing.Color.DarkMagenta;
+            this.botaoMenu2.Location = new System.Drawing.Point(562, 12);
+            this.botaoMenu2.Name = "botaoMenu2";
+            this.botaoMenu2.Size = new System.Drawing.Size(150, 40);
+            this.botaoMenu2.TabIndex = 12;
+            this.botaoMenu2.Text = "botaoMenu2";
+            this.botaoMenu2.TextColor = System.Drawing.Color.DarkMagenta;
+            this.botaoMenu2.UseVisualStyleBackColor = false;
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(796, 547);
+            this.Controls.Add(this.botaoMenu2);
+            this.Controls.Add(this.botaoMenu1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.picCruzamento2);
             this.Controls.Add(this.picCruzamento1);
@@ -170,6 +208,8 @@ namespace Novo_Semaforo
         private System.Windows.Forms.PictureBox picCruzamento2;
         private System.Windows.Forms.PictureBox picCruzamento1;
         private System.Windows.Forms.Label label2;
+        private BotaoMenu botaoMenu1;
+        private BotaoMenu botaoMenu2;
     }
 }
 

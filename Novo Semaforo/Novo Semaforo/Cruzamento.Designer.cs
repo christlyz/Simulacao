@@ -82,7 +82,7 @@ namespace Novo_Semaforo
             // 
             this.picVermelho1.Image = ((System.Drawing.Image)(resources.GetObject("picVermelho1.Image")));
             this.picVermelho1.Location = new System.Drawing.Point(222, 245);
-            this.picVermelho1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picVermelho1.Margin = new System.Windows.Forms.Padding(2);
             this.picVermelho1.Name = "picVermelho1";
             this.picVermelho1.Size = new System.Drawing.Size(61, 31);
             this.picVermelho1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -93,7 +93,7 @@ namespace Novo_Semaforo
             // 
             this.picAmarelo1.Image = ((System.Drawing.Image)(resources.GetObject("picAmarelo1.Image")));
             this.picAmarelo1.Location = new System.Drawing.Point(222, 245);
-            this.picAmarelo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picAmarelo1.Margin = new System.Windows.Forms.Padding(2);
             this.picAmarelo1.Name = "picAmarelo1";
             this.picAmarelo1.Size = new System.Drawing.Size(61, 31);
             this.picAmarelo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,7 +104,7 @@ namespace Novo_Semaforo
             // 
             this.picVerde1.Image = ((System.Drawing.Image)(resources.GetObject("picVerde1.Image")));
             this.picVerde1.Location = new System.Drawing.Point(222, 245);
-            this.picVerde1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picVerde1.Margin = new System.Windows.Forms.Padding(2);
             this.picVerde1.Name = "picVerde1";
             this.picVerde1.Size = new System.Drawing.Size(61, 31);
             this.picVerde1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,7 +115,7 @@ namespace Novo_Semaforo
             // 
             this.picVermelho2.Image = ((System.Drawing.Image)(resources.GetObject("picVermelho2.Image")));
             this.picVermelho2.Location = new System.Drawing.Point(406, 123);
-            this.picVermelho2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picVermelho2.Margin = new System.Windows.Forms.Padding(2);
             this.picVermelho2.Name = "picVermelho2";
             this.picVermelho2.Size = new System.Drawing.Size(56, 30);
             this.picVermelho2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -126,7 +126,7 @@ namespace Novo_Semaforo
             // 
             this.picAmarelo2.Image = ((System.Drawing.Image)(resources.GetObject("picAmarelo2.Image")));
             this.picAmarelo2.Location = new System.Drawing.Point(406, 123);
-            this.picAmarelo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picAmarelo2.Margin = new System.Windows.Forms.Padding(2);
             this.picAmarelo2.Name = "picAmarelo2";
             this.picAmarelo2.Size = new System.Drawing.Size(56, 30);
             this.picAmarelo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +137,7 @@ namespace Novo_Semaforo
             // 
             this.picVerde2.Image = ((System.Drawing.Image)(resources.GetObject("picVerde2.Image")));
             this.picVerde2.Location = new System.Drawing.Point(406, 123);
-            this.picVerde2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picVerde2.Margin = new System.Windows.Forms.Padding(2);
             this.picVerde2.Name = "picVerde2";
             this.picVerde2.Size = new System.Drawing.Size(56, 30);
             this.picVerde2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +158,7 @@ namespace Novo_Semaforo
             // 
             this.picCarroPreto.Image = ((System.Drawing.Image)(resources.GetObject("picCarroPreto.Image")));
             this.picCarroPreto.Location = new System.Drawing.Point(222, 541);
-            this.picCarroPreto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCarroPreto.Margin = new System.Windows.Forms.Padding(2);
             this.picCarroPreto.Name = "picCarroPreto";
             this.picCarroPreto.Size = new System.Drawing.Size(75, 108);
             this.picCarroPreto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -169,7 +169,7 @@ namespace Novo_Semaforo
             // 
             this.picPedestre.Image = ((System.Drawing.Image)(resources.GetObject("picPedestre.Image")));
             this.picPedestre.Location = new System.Drawing.Point(95, 323);
-            this.picPedestre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPedestre.Margin = new System.Windows.Forms.Padding(2);
             this.picPedestre.Name = "picPedestre";
             this.picPedestre.Size = new System.Drawing.Size(46, 52);
             this.picPedestre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -180,7 +180,7 @@ namespace Novo_Semaforo
             // 
             this.picCarroBranco.Image = ((System.Drawing.Image)(resources.GetObject("picCarroBranco.Image")));
             this.picCarroBranco.Location = new System.Drawing.Point(671, 75);
-            this.picCarroBranco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCarroBranco.Margin = new System.Windows.Forms.Padding(2);
             this.picCarroBranco.Name = "picCarroBranco";
             this.picCarroBranco.Size = new System.Drawing.Size(96, 54);
             this.picCarroBranco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -191,7 +191,7 @@ namespace Novo_Semaforo
             // 
             this.picCadeirante.Image = ((System.Drawing.Image)(resources.GetObject("picCadeirante.Image")));
             this.picCadeirante.Location = new System.Drawing.Point(569, 14);
-            this.picCadeirante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCadeirante.Margin = new System.Windows.Forms.Padding(2);
             this.picCadeirante.Name = "picCadeirante";
             this.picCadeirante.Size = new System.Drawing.Size(41, 52);
             this.picCadeirante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -202,7 +202,7 @@ namespace Novo_Semaforo
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(187, 310);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(10, 76);
             this.panel1.TabIndex = 14;
@@ -211,7 +211,7 @@ namespace Novo_Semaforo
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(201, 310);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 76);
             this.panel2.TabIndex = 15;
@@ -220,7 +220,7 @@ namespace Novo_Semaforo
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(230, 310);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 76);
             this.panel3.TabIndex = 17;
@@ -229,7 +229,7 @@ namespace Novo_Semaforo
             // 
             this.panel4.BackColor = System.Drawing.Color.Black;
             this.panel4.Location = new System.Drawing.Point(215, 310);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 76);
             this.panel4.TabIndex = 16;
@@ -238,7 +238,7 @@ namespace Novo_Semaforo
             // 
             this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Location = new System.Drawing.Point(258, 310);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(10, 76);
             this.panel5.TabIndex = 19;
@@ -247,7 +247,7 @@ namespace Novo_Semaforo
             // 
             this.panel6.BackColor = System.Drawing.Color.Black;
             this.panel6.Location = new System.Drawing.Point(244, 310);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(10, 76);
             this.panel6.TabIndex = 18;
@@ -256,7 +256,7 @@ namespace Novo_Semaforo
             // 
             this.panel7.BackColor = System.Drawing.Color.Black;
             this.panel7.Location = new System.Drawing.Point(286, 310);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(10, 76);
             this.panel7.TabIndex = 21;
@@ -265,7 +265,7 @@ namespace Novo_Semaforo
             // 
             this.panel8.BackColor = System.Drawing.Color.Black;
             this.panel8.Location = new System.Drawing.Point(272, 310);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(10, 76);
             this.panel8.TabIndex = 20;
@@ -274,7 +274,7 @@ namespace Novo_Semaforo
             // 
             this.panel12.BackColor = System.Drawing.Color.Black;
             this.panel12.Location = new System.Drawing.Point(301, 310);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(10, 76);
             this.panel12.TabIndex = 22;
@@ -283,7 +283,7 @@ namespace Novo_Semaforo
             // 
             this.panel9.BackColor = System.Drawing.Color.Black;
             this.panel9.Location = new System.Drawing.Point(534, 219);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(100, 12);
             this.panel9.TabIndex = 23;
@@ -292,7 +292,7 @@ namespace Novo_Semaforo
             // 
             this.panel10.BackColor = System.Drawing.Color.Black;
             this.panel10.Location = new System.Drawing.Point(534, 236);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(100, 12);
             this.panel10.TabIndex = 24;
@@ -301,7 +301,7 @@ namespace Novo_Semaforo
             // 
             this.panel11.BackColor = System.Drawing.Color.Black;
             this.panel11.Location = new System.Drawing.Point(534, 202);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(100, 12);
             this.panel11.TabIndex = 26;
@@ -310,7 +310,7 @@ namespace Novo_Semaforo
             // 
             this.panel13.BackColor = System.Drawing.Color.Black;
             this.panel13.Location = new System.Drawing.Point(534, 185);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(100, 12);
             this.panel13.TabIndex = 25;
@@ -319,7 +319,7 @@ namespace Novo_Semaforo
             // 
             this.panel14.BackColor = System.Drawing.Color.Black;
             this.panel14.Location = new System.Drawing.Point(534, 168);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(100, 12);
             this.panel14.TabIndex = 28;
@@ -328,7 +328,7 @@ namespace Novo_Semaforo
             // 
             this.panel15.BackColor = System.Drawing.Color.Black;
             this.panel15.Location = new System.Drawing.Point(534, 151);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(100, 12);
             this.panel15.TabIndex = 27;
@@ -337,7 +337,7 @@ namespace Novo_Semaforo
             // 
             this.panel18.BackColor = System.Drawing.Color.Black;
             this.panel18.Location = new System.Drawing.Point(534, 100);
-            this.panel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel18.Margin = new System.Windows.Forms.Padding(2);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(100, 12);
             this.panel18.TabIndex = 32;
@@ -346,7 +346,7 @@ namespace Novo_Semaforo
             // 
             this.panel19.BackColor = System.Drawing.Color.Black;
             this.panel19.Location = new System.Drawing.Point(534, 134);
-            this.panel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel19.Margin = new System.Windows.Forms.Padding(2);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(100, 12);
             this.panel19.TabIndex = 30;
@@ -355,7 +355,7 @@ namespace Novo_Semaforo
             // 
             this.panel21.BackColor = System.Drawing.Color.Black;
             this.panel21.Location = new System.Drawing.Point(534, 117);
-            this.panel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel21.Margin = new System.Windows.Forms.Padding(2);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(100, 12);
             this.panel21.TabIndex = 29;
@@ -364,7 +364,7 @@ namespace Novo_Semaforo
             // 
             this.panel16.BackColor = System.Drawing.Color.Black;
             this.panel16.Location = new System.Drawing.Point(344, 310);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(10, 76);
             this.panel16.TabIndex = 25;
@@ -373,7 +373,7 @@ namespace Novo_Semaforo
             // 
             this.panel17.BackColor = System.Drawing.Color.Black;
             this.panel17.Location = new System.Drawing.Point(329, 310);
-            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(10, 76);
             this.panel17.TabIndex = 24;
@@ -382,15 +382,15 @@ namespace Novo_Semaforo
             // 
             this.panel20.BackColor = System.Drawing.Color.Black;
             this.panel20.Location = new System.Drawing.Point(315, 310);
-            this.panel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel20.Margin = new System.Windows.Forms.Padding(2);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(10, 76);
             this.panel20.TabIndex = 23;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(501, 380);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(567, 395);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(67, 33);
             this.button2.TabIndex = 33;
@@ -442,7 +442,7 @@ namespace Novo_Semaforo
             this.Controls.Add(this.panel9);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(814, 592);
             this.Name = "Cruzamento";

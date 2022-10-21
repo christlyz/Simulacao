@@ -10,3 +10,16 @@ C:\Users\christian.santos\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simula
 C:\Users\christian.santos\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simulacao-AccWay.csproj.CoreCompileInputs.cache
 C:\Users\christian.santos\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.exe
 C:\Users\christian.santos\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.pdb
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\bin\Debug\Novo Semaforo.exe.config
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\bin\Debug\Novo Semaforo.exe
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\bin\Debug\Novo Semaforo.pdb
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simulacao-AccWay.csproj.AssemblyReference.cache
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simulacao-AccWay.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.Cruzamento.resources
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.menu.resources
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.viaUnica.resources
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo_Semaforo.Properties.Resources.resources
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simulacao-AccWay.csproj.GenerateResource.cache
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Simulacao-AccWay.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.exe
+C:\Users\Pichau\Documents\Simulacao\Novo Semaforo\Novo Semaforo\obj\Debug\Novo Semaforo.pdb
