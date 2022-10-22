@@ -10,22 +10,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media;
+using Color = System.Drawing.Color;
+using Matrix = System.Drawing.Drawing2D.Matrix;
+using Pen = System.Drawing.Pen;
 
 namespace Novo_Semaforo
 {
     public partial class menu : Form
     {
-
+        //Fields
         private int borderRadius = 30;
         private int borderSize = 2;
-        private Color borderColor = Color.RoyalBlue;
+        private Color borderColor = Color.FromArgb(0, 0, 0);
+
+        //Constructor
         public menu()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             this.Padding = new Padding(borderSize);
+            this.panelTítulo.BackColor = borderColor;
+            this.BackColor = borderColor;
         }
 
+        //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -44,7 +52,13 @@ namespace Novo_Semaforo
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+        private void panelTítulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
 
+        // Private Methods
         private GraphicsPath GetRoundedPath(Rectangle rect, float radius)
         {
             GraphicsPath path = new GraphicsPath();
@@ -61,29 +75,132 @@ namespace Novo_Semaforo
 
         private void FormRegionAndBorder(Form form, float radius, Graphics graph, Color borderColor, float borderSize)
         {
-            if(this.WindowState != FormWindowState.Minimized)
+            if (this.WindowState != FormWindowState.Minimized)
             {
                 using (GraphicsPath roundPath = GetRoundedPath(form.ClientRectangle, radius))
-                using (System.Drawing.Pen penBorder = new System.Drawing.Pen(borderColor, borderSize))
-                using (Matrix tranform = new Matrix())
+                using (Pen penBorder = new Pen(borderColor, borderSize))
+                using (Matrix transform = new Matrix())
                 {
                     graph.SmoothingMode = SmoothingMode.AntiAlias;
                     form.Region = new Region(roundPath);
-                    if(borderSize > 1)
+                    if (borderSize >= 1)
                     {
                         Rectangle rect = form.ClientRectangle;
                         float scaleX = 1.0F - ((borderSize + 1) / rect.Width);
                         float scaleY = 1.0F - ((borderSize + 1) / rect.Height);
 
-                        Transform.scale(scaleX, scaleY);
-                        Transform.translate(borderSize / 1.6F, borderSize / 1.6F);
+                        transform.Scale(scaleX, scaleY);
+                        transform.Translate(borderSize / 1.6F, borderSize / 1.6F);
 
-                        graph.Transform = tranform;
+                        graph.Transform = transform;
                         graph.DrawPath(penBorder, roundPath);
                     }
                 }
             }
         }
+        private void ControlRegionAndBorder(Control control, float radius, Graphics graph, Color borderColor)
+        {
+            using (GraphicsPath roundPath = GetRoundedPath(control.ClientRectangle, radius))
+            using (Pen penBorder = new Pen(borderColor, 1))
+            {
+                graph.SmoothingMode = SmoothingMode.AntiAlias;
+                control.Region = new Region(roundPath);
+                graph.DrawPath(penBorder, roundPath);
+            }
+        }
+        private void DrawPath(Rectangle rect, Graphics graph, Color color)
+        {
+            using (GraphicsPath roundPath = GetRoundedPath(rect, borderRadius))
+            using (Pen penBorder = new Pen(color, 3))
+            {
+                graph.DrawPath(penBorder, roundPath);
+            }
+        }
+        private struct FormBoundsColors
+        {
+            public Color TopLeftColor;
+            public Color TopRightColor;
+            public Color BottomLeftColor;
+            public Color BottomRightColor;
+        }
+        private FormBoundsColors GetFormBoundsColors()
+        {
+            var fbColor = new FormBoundsColors();
+            using (var bmp = new Bitmap(1, 1))
+            using (Graphics graph = Graphics.FromImage(bmp))
+            {
+                Rectangle rectBmp = new Rectangle(0, 0, 1, 1);
+                //Top Left
+                rectBmp.X = this.Bounds.X - 1;
+                rectBmp.Y = this.Bounds.Y;
+                graph.CopyFromScreen(rectBmp.Location, Point.Empty, rectBmp.Size);
+                fbColor.TopLeftColor = bmp.GetPixel(0, 0);
+                //Top Right
+                rectBmp.X = this.Bounds.Right;
+                rectBmp.Y = this.Bounds.Y;
+                graph.CopyFromScreen(rectBmp.Location, Point.Empty, rectBmp.Size);
+                fbColor.TopRightColor = bmp.GetPixel(0, 0);
+                //Bottom Left
+                rectBmp.X = this.Bounds.X;
+                rectBmp.Y = this.Bounds.Bottom;
+                graph.CopyFromScreen(rectBmp.Location, Point.Empty, rectBmp.Size);
+                fbColor.BottomLeftColor = bmp.GetPixel(0, 0);
+                //Bottom Right
+                rectBmp.X = this.Bounds.Right;
+                rectBmp.Y = this.Bounds.Bottom;
+                graph.CopyFromScreen(rectBmp.Location, Point.Empty, rectBmp.Size);
+                fbColor.BottomRightColor = bmp.GetPixel(0, 0);
+            }
+            return fbColor;
+        }
+
+        //Event Methods
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            base.OnPaintBackground(e);
+
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            Rectangle rectForm = this.ClientRectangle;
+            int mWidht = rectForm.Width / 2;
+            int mHeight = rectForm.Height / 2;
+            var fbColors = GetFormBoundsColors();
+
+            // Topo Esquerda 
+            DrawPath(rectForm, e.Graphics, fbColors.TopLeftColor);
+
+            // Topo Direita
+            Rectangle rectTopRight = new Rectangle(mWidht, rectForm.Y, mWidht, mHeight);
+            DrawPath(rectTopRight, e.Graphics, fbColors.TopRightColor);
+
+            // Bottom Esquerda
+            Rectangle rectBottomLeft = new Rectangle(rectForm.X, rectForm.X + mHeight, mWidht, mHeight);
+            DrawPath(rectBottomLeft, e.Graphics, fbColors.BottomLeftColor);
+
+            // Bottom Direita
+            Rectangle rectBottomRight = new Rectangle(mWidht, rectForm.Y + mHeight, mWidht, mHeight);
+            DrawPath(rectBottomRight, e.Graphics, fbColors.BottomRightColor);
+            }
+        private void menu_Paint(object sender, PaintEventArgs e)
+        {
+            FormRegionAndBorder(this,borderRadius,e.Graphics,borderColor,borderSize);
+        }
+        private void panelFundo_Paint(object sender, PaintEventArgs e)
+        {
+            ControlRegionAndBorder(panelFundo, borderRadius - (borderSize / 2), e.Graphics, borderColor);
+        }
+        private void menu_ResizeEnd(object sender, EventArgs e)
+        {
+            this.Invalidate();
+        }
+        private void menu_SizeChanged(object sender, EventArgs e)
+        {
+            this.Invalidate();
+        }
+        private void menu_Activated(object sender, EventArgs e)
+        {
+            this.Invalidate();
+        }
+
         // Via Única //
 
         private void picViaUnica_MouseEnter(object sender, EventArgs e)
@@ -151,5 +268,9 @@ namespace Novo_Semaforo
             picCruzamento2.Visible = false;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
