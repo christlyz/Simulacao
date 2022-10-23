@@ -29,11 +29,12 @@ namespace Novo_Semaforo
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             this.Padding = new Padding(borderSize);
-            this.panelTítulo.BackColor = borderColor;
+            this.panelTitulo.BackColor = borderColor;
             this.BackColor = borderColor;
         }
 
         //Drag Form
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -271,6 +272,11 @@ namespace Novo_Semaforo
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

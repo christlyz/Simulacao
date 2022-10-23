@@ -38,7 +38,8 @@ namespace Novo_Semaforo
             this.picCruzamento1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelFundo = new System.Windows.Forms.Panel();
-            this.panelTítulo = new System.Windows.Forms.Panel();
+            this.panelTitulo = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picViaUnica1)).BeginInit();
@@ -46,7 +47,7 @@ namespace Novo_Semaforo
             ((System.ComponentModel.ISupportInitialize)(this.picCruzamento2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCruzamento1)).BeginInit();
             this.panelFundo.SuspendLayout();
-            this.panelTítulo.SuspendLayout();
+            this.panelTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -149,7 +150,7 @@ namespace Novo_Semaforo
             // 
             this.panelFundo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelFundo.Controls.Add(this.pictureBox1);
-            this.panelFundo.Controls.Add(this.panelTítulo);
+            this.panelFundo.Controls.Add(this.panelTitulo);
             this.panelFundo.Controls.Add(this.label2);
             this.panelFundo.Controls.Add(this.picCruzamento2);
             this.panelFundo.Controls.Add(this.label1);
@@ -163,16 +164,33 @@ namespace Novo_Semaforo
             this.panelFundo.TabIndex = 11;
             this.panelFundo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFundo_Paint);
             // 
-            // panelTítulo
+            // panelTitulo
             // 
-            this.panelTítulo.BackColor = System.Drawing.Color.Black;
-            this.panelTítulo.Controls.Add(this.button1);
-            this.panelTítulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTítulo.Location = new System.Drawing.Point(0, 0);
-            this.panelTítulo.Name = "panelTítulo";
-            this.panelTítulo.Size = new System.Drawing.Size(796, 42);
-            this.panelTítulo.TabIndex = 11;
-            this.panelTítulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTítulo_MouseDown);
+            this.panelTitulo.BackColor = System.Drawing.Color.Black;
+            this.panelTitulo.Controls.Add(this.button2);
+            this.panelTitulo.Controls.Add(this.button1);
+            this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitulo.Location = new System.Drawing.Point(0, 0);
+            this.panelTitulo.Name = "panelTitulo";
+            this.panelTitulo.Size = new System.Drawing.Size(796, 42);
+            this.panelTitulo.TabIndex = 11;
+            this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTítulo_MouseDown);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(672, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(53, 42);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "_";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -185,7 +203,7 @@ namespace Novo_Semaforo
             this.button1.Location = new System.Drawing.Point(731, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(53, 42);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 12;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -213,7 +231,7 @@ namespace Novo_Semaforo
             ((System.ComponentModel.ISupportInitialize)(this.picCruzamento1)).EndInit();
             this.panelFundo.ResumeLayout(false);
             this.panelFundo.PerformLayout();
-            this.panelTítulo.ResumeLayout(false);
+            this.panelTitulo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -227,8 +245,9 @@ namespace Novo_Semaforo
         private System.Windows.Forms.PictureBox picCruzamento1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelFundo;
-        private System.Windows.Forms.Panel panelTítulo;
+        private System.Windows.Forms.Panel panelTitulo;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
