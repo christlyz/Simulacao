@@ -68,21 +68,12 @@ namespace Novo_Semaforo
             picFundo.Controls.Add(picVerde2);
             picVerde2.BackColor = Color.Transparent;
         }
-        //DragForm
+        // Arrastar Form
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.Style |= 0x20000;
-                return cp;
-            }
-        }
 
 
         private void Cruzamento_MouseDown(object sender, MouseEventArgs e)
@@ -97,7 +88,7 @@ namespace Novo_Semaforo
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        // Private Methods
+        // Métodos privados
         private GraphicsPath GetRoundedPath(Rectangle rect, float radius)
         {
             GraphicsPath path = new GraphicsPath();
@@ -194,7 +185,7 @@ namespace Novo_Semaforo
             return fbColor;
         }
 
-        //Event Methods
+        // Métodos de Eventos
 
         private void Cruzamento_Paint(object sender, PaintEventArgs e)
         {
@@ -444,11 +435,11 @@ namespace Novo_Semaforo
 
         private void btnReiniciar_Click(object sender, EventArgs e)
         {
-            picCadeirante.Location = new Point(569, 14);
-            picPedestre.Location = new Point(95, 323);
+            picCadeirante.Location = new Point(466, 44);
+            picPedestre.Location = new Point(135, 319);
 
-            picCarroPreto.Location = new Point(222, 548);
-            picCarroBranco.Location = new Point(797, 123);
+            picCarroPreto.Location = new Point(241, 534);
+            picCarroBranco.Location = new Point(785, 152);
 
             picVerde1.Visible = true;
             picVermelho2.Visible = true;

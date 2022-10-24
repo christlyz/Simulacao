@@ -45,6 +45,7 @@ namespace Novo_Semaforo
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panelFundo = new System.Windows.Forms.Panel();
+            this.picFundo = new System.Windows.Forms.PictureBox();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picCarro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVerde)).BeginInit();
@@ -53,13 +54,14 @@ namespace Novo_Semaforo
             ((System.ComponentModel.ISupportInitialize)(this.picPedestre)).BeginInit();
             this.panelTitulo.SuspendLayout();
             this.panelFundo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFundo)).BeginInit();
             this.SuspendLayout();
             // 
             // picCarro
             // 
             this.picCarro.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.picCarro.Image = ((System.Drawing.Image)(resources.GetObject("picCarro.Image")));
-            this.picCarro.Location = new System.Drawing.Point(357, 531);
+            this.picCarro.Location = new System.Drawing.Point(357, 543);
             this.picCarro.Margin = new System.Windows.Forms.Padding(2);
             this.picCarro.Name = "picCarro";
             this.picCarro.Size = new System.Drawing.Size(112, 140);
@@ -70,7 +72,7 @@ namespace Novo_Semaforo
             // picVerde
             // 
             this.picVerde.Image = ((System.Drawing.Image)(resources.GetObject("picVerde.Image")));
-            this.picVerde.Location = new System.Drawing.Point(212, 166);
+            this.picVerde.Location = new System.Drawing.Point(247, 234);
             this.picVerde.Margin = new System.Windows.Forms.Padding(2);
             this.picVerde.Name = "picVerde";
             this.picVerde.Size = new System.Drawing.Size(153, 172);
@@ -81,7 +83,7 @@ namespace Novo_Semaforo
             // picAmarelo
             // 
             this.picAmarelo.Image = ((System.Drawing.Image)(resources.GetObject("picAmarelo.Image")));
-            this.picAmarelo.Location = new System.Drawing.Point(212, 166);
+            this.picAmarelo.Location = new System.Drawing.Point(247, 234);
             this.picAmarelo.Margin = new System.Windows.Forms.Padding(2);
             this.picAmarelo.Name = "picAmarelo";
             this.picAmarelo.Size = new System.Drawing.Size(153, 172);
@@ -92,7 +94,7 @@ namespace Novo_Semaforo
             // picVermelho
             // 
             this.picVermelho.Image = ((System.Drawing.Image)(resources.GetObject("picVermelho.Image")));
-            this.picVermelho.Location = new System.Drawing.Point(212, 166);
+            this.picVermelho.Location = new System.Drawing.Point(247, 233);
             this.picVermelho.Margin = new System.Windows.Forms.Padding(2);
             this.picVermelho.Name = "picVermelho";
             this.picVermelho.Size = new System.Drawing.Size(153, 172);
@@ -104,7 +106,7 @@ namespace Novo_Semaforo
             // 
             this.picPedestre.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.picPedestre.Image = ((System.Drawing.Image)(resources.GetObject("picPedestre.Image")));
-            this.picPedestre.Location = new System.Drawing.Point(204, 254);
+            this.picPedestre.Location = new System.Drawing.Point(234, 321);
             this.picPedestre.Margin = new System.Windows.Forms.Padding(2);
             this.picPedestre.Name = "picPedestre";
             this.picPedestre.Size = new System.Drawing.Size(67, 84);
@@ -119,24 +121,33 @@ namespace Novo_Semaforo
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(212, 343);
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Brown;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(244, 231);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 32);
+            this.button1.Size = new System.Drawing.Size(67, 33);
             this.button1.TabIndex = 6;
             this.button1.Text = "Botão";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(212, 379);
+            this.button2.BackColor = System.Drawing.Color.Gold;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(244, 268);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(67, 33);
             this.button2.TabIndex = 7;
             this.button2.Text = "Cartão";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // timer2
@@ -146,13 +157,18 @@ namespace Novo_Semaforo
             // 
             // btnReinicia
             // 
-            this.btnReinicia.Location = new System.Drawing.Point(709, 119);
+            this.btnReinicia.BackColor = System.Drawing.Color.White;
+            this.btnReinicia.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnReinicia.FlatAppearance.BorderSize = 2;
+            this.btnReinicia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReinicia.ForeColor = System.Drawing.Color.Black;
+            this.btnReinicia.Location = new System.Drawing.Point(718, 128);
             this.btnReinicia.Margin = new System.Windows.Forms.Padding(2);
             this.btnReinicia.Name = "btnReinicia";
             this.btnReinicia.Size = new System.Drawing.Size(67, 33);
             this.btnReinicia.TabIndex = 8;
             this.btnReinicia.Text = "Reiniciar";
-            this.btnReinicia.UseVisualStyleBackColor = true;
+            this.btnReinicia.UseVisualStyleBackColor = false;
             this.btnReinicia.Click += new System.EventHandler(this.btnReinicia_Click);
             // 
             // panelTitulo
@@ -202,15 +218,29 @@ namespace Novo_Semaforo
             // panelFundo
             // 
             this.panelFundo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelFundo.Controls.Add(this.button2);
+            this.panelFundo.Controls.Add(this.button1);
+            this.panelFundo.Controls.Add(this.btnReinicia);
             this.panelFundo.Controls.Add(this.picVermelho);
             this.panelFundo.Controls.Add(this.picAmarelo);
             this.panelFundo.Controls.Add(this.picVerde);
+            this.panelFundo.Controls.Add(this.picFundo);
             this.panelFundo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFundo.Location = new System.Drawing.Point(0, 0);
             this.panelFundo.Name = "panelFundo";
             this.panelFundo.Size = new System.Drawing.Size(796, 547);
             this.panelFundo.TabIndex = 36;
             this.panelFundo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFundo_Paint_1);
+            // 
+            // picFundo
+            // 
+            this.picFundo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picFundo.BackgroundImage")));
+            this.picFundo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picFundo.Location = new System.Drawing.Point(0, 0);
+            this.picFundo.Name = "picFundo";
+            this.picFundo.Size = new System.Drawing.Size(796, 547);
+            this.picFundo.TabIndex = 4;
+            this.picFundo.TabStop = false;
             // 
             // timer3
             // 
@@ -224,9 +254,6 @@ namespace Novo_Semaforo
             this.ClientSize = new System.Drawing.Size(796, 547);
             this.Controls.Add(this.picPedestre);
             this.Controls.Add(this.panelTitulo);
-            this.Controls.Add(this.btnReinicia);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.picCarro);
             this.Controls.Add(this.panelFundo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -246,6 +273,7 @@ namespace Novo_Semaforo
             ((System.ComponentModel.ISupportInitialize)(this.picPedestre)).EndInit();
             this.panelTitulo.ResumeLayout(false);
             this.panelFundo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picFundo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -267,5 +295,6 @@ namespace Novo_Semaforo
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panelFundo;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.PictureBox picFundo;
     }
 }

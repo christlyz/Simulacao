@@ -23,7 +23,7 @@ namespace Novo_Semaforo
         private int borderSize = 2;
         private Color borderColor = Color.FromArgb(0, 0, 0);
 
-        //Constructor
+        //Construtor
         public menu()
         {
             InitializeComponent();
@@ -33,21 +33,13 @@ namespace Novo_Semaforo
             this.BackColor = borderColor;
         }
 
-        //Drag Form
+        //Arrastar Form
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.Style |= 0x20000;
-                return cp;
-            }
-        }
+
         private void menu_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -59,7 +51,7 @@ namespace Novo_Semaforo
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        // Private Methods
+        // Métodos Privados
         private GraphicsPath GetRoundedPath(Rectangle rect, float radius)
         {
             GraphicsPath path = new GraphicsPath();
@@ -155,7 +147,7 @@ namespace Novo_Semaforo
             return fbColor;
         }
 
-        //Event Methods
+        //Métodos de eventos
         protected override void OnPaintBackground(PaintEventArgs e)
         {
             base.OnPaintBackground(e);

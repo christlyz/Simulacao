@@ -30,7 +30,7 @@ namespace Novo_Semaforo
             this.button4.BackColor = borderColor;
             this.BackColor = borderColor;
 
-            /*picFundo.Controls.Add(picCarro);
+            picFundo.Controls.Add(picCarro);
             picCarro.BackColor = Color.Transparent;
 
             picFundo.Controls.Add(picPedestre);
@@ -43,24 +43,16 @@ namespace Novo_Semaforo
             picAmarelo.BackColor = Color.Transparent;
 
             picFundo.Controls.Add(picVerde);
-            picVerde.BackColor = Color.Transparent;*/
+            picVerde.BackColor = Color.Transparent;
         }
 
-        //DragForm
+        // Arrastar Form
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.Style |= 0x20000;
-                return cp;
-            }
-        }
+
 
         private void viaUnica_MouseDown(object sender, MouseEventArgs e)
         {
@@ -74,7 +66,7 @@ namespace Novo_Semaforo
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        // Private Methods
+        // Métodos Privados
         private GraphicsPath GetRoundedPath(Rectangle rect, float radius)
         {
             GraphicsPath path = new GraphicsPath();
@@ -171,7 +163,7 @@ namespace Novo_Semaforo
             return fbColor;
         }
 
-        //Event Methods
+        // Métodos de Eventos
 
         private void viaUnica_Paint(object sender, PaintEventArgs e)
         {
@@ -310,8 +302,8 @@ namespace Novo_Semaforo
 
         private void btnReinicia_Click(object sender, EventArgs e)
         {
-            picCarro.Location = new Point(380, 547);
-            picPedestre.Location = new Point(212, 254);
+            picCarro.Location = new Point(357, 543);
+            picPedestre.Location = new Point(234, 321);
 
             timer3.Enabled = false;
             button1.Text = "Botão";

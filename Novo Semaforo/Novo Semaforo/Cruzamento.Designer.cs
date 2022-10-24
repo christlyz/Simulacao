@@ -49,8 +49,8 @@ namespace Novo_Semaforo
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panelFundo = new System.Windows.Forms.Panel();
-            this.picFundo = new System.Windows.Forms.PictureBox();
             this.btnReiniciar = new System.Windows.Forms.Button();
+            this.picFundo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picVermelho1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAmarelo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picVerde1)).BeginInit();
@@ -198,13 +198,17 @@ namespace Novo_Semaforo
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Gold;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(114, 375);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(67, 33);
             this.button2.TabIndex = 33;
             this.button2.Text = "Cartão";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // timer3
@@ -279,6 +283,19 @@ namespace Novo_Semaforo
             this.panelFundo.TabIndex = 35;
             this.panelFundo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFundo_Paint);
             // 
+            // btnReiniciar
+            // 
+            this.btnReiniciar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnReiniciar.FlatAppearance.BorderSize = 2;
+            this.btnReiniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReiniciar.Location = new System.Drawing.Point(685, 475);
+            this.btnReiniciar.Name = "btnReiniciar";
+            this.btnReiniciar.Size = new System.Drawing.Size(75, 35);
+            this.btnReiniciar.TabIndex = 34;
+            this.btnReiniciar.Text = "Reiniciar";
+            this.btnReiniciar.UseVisualStyleBackColor = true;
+            this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
+            // 
             // picFundo
             // 
             this.picFundo.BackColor = System.Drawing.Color.White;
@@ -290,16 +307,6 @@ namespace Novo_Semaforo
             this.picFundo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picFundo.TabIndex = 10;
             this.picFundo.TabStop = false;
-            // 
-            // btnReiniciar
-            // 
-            this.btnReiniciar.Location = new System.Drawing.Point(685, 475);
-            this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(75, 35);
-            this.btnReiniciar.TabIndex = 34;
-            this.btnReiniciar.Text = "Reiniciar";
-            this.btnReiniciar.UseVisualStyleBackColor = true;
-            this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 
             // Cruzamento
             // 
