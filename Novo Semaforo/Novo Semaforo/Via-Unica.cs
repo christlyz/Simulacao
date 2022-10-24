@@ -292,7 +292,7 @@ namespace Novo_Semaforo
                 picCarro.Location = new Point(357, 531);
 
             if (picPedestre.Location.X > 879)
-                picPedestre.Location = new Point(-67, 254);
+                picPedestre.Location = new Point(-67, 321);
         }
 
         private void button2_Click(object sender, EventArgs e)

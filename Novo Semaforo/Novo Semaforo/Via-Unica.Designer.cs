@@ -61,10 +61,10 @@ namespace Novo_Semaforo
             // 
             this.picCarro.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.picCarro.Image = ((System.Drawing.Image)(resources.GetObject("picCarro.Image")));
-            this.picCarro.Location = new System.Drawing.Point(357, 543);
-            this.picCarro.Margin = new System.Windows.Forms.Padding(2);
+            this.picCarro.Location = new System.Drawing.Point(476, 668);
+            this.picCarro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCarro.Name = "picCarro";
-            this.picCarro.Size = new System.Drawing.Size(112, 140);
+            this.picCarro.Size = new System.Drawing.Size(149, 172);
             this.picCarro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCarro.TabIndex = 0;
             this.picCarro.TabStop = false;
@@ -72,10 +72,10 @@ namespace Novo_Semaforo
             // picVerde
             // 
             this.picVerde.Image = ((System.Drawing.Image)(resources.GetObject("picVerde.Image")));
-            this.picVerde.Location = new System.Drawing.Point(247, 234);
-            this.picVerde.Margin = new System.Windows.Forms.Padding(2);
+            this.picVerde.Location = new System.Drawing.Point(329, 288);
+            this.picVerde.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picVerde.Name = "picVerde";
-            this.picVerde.Size = new System.Drawing.Size(153, 172);
+            this.picVerde.Size = new System.Drawing.Size(204, 212);
             this.picVerde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picVerde.TabIndex = 1;
             this.picVerde.TabStop = false;
@@ -83,10 +83,10 @@ namespace Novo_Semaforo
             // picAmarelo
             // 
             this.picAmarelo.Image = ((System.Drawing.Image)(resources.GetObject("picAmarelo.Image")));
-            this.picAmarelo.Location = new System.Drawing.Point(247, 234);
-            this.picAmarelo.Margin = new System.Windows.Forms.Padding(2);
+            this.picAmarelo.Location = new System.Drawing.Point(329, 288);
+            this.picAmarelo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picAmarelo.Name = "picAmarelo";
-            this.picAmarelo.Size = new System.Drawing.Size(153, 172);
+            this.picAmarelo.Size = new System.Drawing.Size(204, 212);
             this.picAmarelo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAmarelo.TabIndex = 2;
             this.picAmarelo.TabStop = false;
@@ -94,10 +94,10 @@ namespace Novo_Semaforo
             // picVermelho
             // 
             this.picVermelho.Image = ((System.Drawing.Image)(resources.GetObject("picVermelho.Image")));
-            this.picVermelho.Location = new System.Drawing.Point(247, 233);
-            this.picVermelho.Margin = new System.Windows.Forms.Padding(2);
+            this.picVermelho.Location = new System.Drawing.Point(329, 287);
+            this.picVermelho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picVermelho.Name = "picVermelho";
-            this.picVermelho.Size = new System.Drawing.Size(153, 172);
+            this.picVermelho.Size = new System.Drawing.Size(204, 212);
             this.picVermelho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picVermelho.TabIndex = 3;
             this.picVermelho.TabStop = false;
@@ -106,10 +106,10 @@ namespace Novo_Semaforo
             // 
             this.picPedestre.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.picPedestre.Image = ((System.Drawing.Image)(resources.GetObject("picPedestre.Image")));
-            this.picPedestre.Location = new System.Drawing.Point(234, 321);
-            this.picPedestre.Margin = new System.Windows.Forms.Padding(2);
+            this.picPedestre.Location = new System.Drawing.Point(312, 395);
+            this.picPedestre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picPedestre.Name = "picPedestre";
-            this.picPedestre.Size = new System.Drawing.Size(67, 84);
+            this.picPedestre.Size = new System.Drawing.Size(89, 103);
             this.picPedestre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPedestre.TabIndex = 4;
             this.picPedestre.TabStop = false;
@@ -126,10 +126,10 @@ namespace Novo_Semaforo
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(244, 231);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(325, 284);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 33);
+            this.button1.Size = new System.Drawing.Size(89, 41);
             this.button1.TabIndex = 6;
             this.button1.Text = "Botão";
             this.button1.UseVisualStyleBackColor = false;
@@ -141,10 +141,10 @@ namespace Novo_Semaforo
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
             this.button2.FlatAppearance.BorderSize = 2;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(244, 268);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(325, 330);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(67, 33);
+            this.button2.Size = new System.Drawing.Size(89, 41);
             this.button2.TabIndex = 7;
             this.button2.Text = "Cartão";
             this.button2.UseVisualStyleBackColor = false;
@@ -162,10 +162,10 @@ namespace Novo_Semaforo
             this.btnReinicia.FlatAppearance.BorderSize = 2;
             this.btnReinicia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReinicia.ForeColor = System.Drawing.Color.Black;
-            this.btnReinicia.Location = new System.Drawing.Point(718, 128);
-            this.btnReinicia.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReinicia.Location = new System.Drawing.Point(957, 158);
+            this.btnReinicia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReinicia.Name = "btnReinicia";
-            this.btnReinicia.Size = new System.Drawing.Size(67, 33);
+            this.btnReinicia.Size = new System.Drawing.Size(89, 41);
             this.btnReinicia.TabIndex = 8;
             this.btnReinicia.Text = "Reiniciar";
             this.btnReinicia.UseVisualStyleBackColor = false;
@@ -178,8 +178,9 @@ namespace Novo_Semaforo
             this.panelTitulo.Controls.Add(this.button4);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(0, 0);
+            this.panelTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(796, 42);
+            this.panelTitulo.Size = new System.Drawing.Size(1061, 52);
             this.panelTitulo.TabIndex = 35;
             this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseDown_1);
             // 
@@ -191,9 +192,10 @@ namespace Novo_Semaforo
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(683, 0);
+            this.button3.Location = new System.Drawing.Point(911, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(53, 42);
+            this.button3.Size = new System.Drawing.Size(71, 52);
             this.button3.TabIndex = 36;
             this.button3.Text = "_";
             this.button3.UseVisualStyleBackColor = false;
@@ -207,9 +209,10 @@ namespace Novo_Semaforo
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(742, 0);
+            this.button4.Location = new System.Drawing.Point(989, 0);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(53, 42);
+            this.button4.Size = new System.Drawing.Size(71, 52);
             this.button4.TabIndex = 35;
             this.button4.Text = "X";
             this.button4.UseVisualStyleBackColor = false;
@@ -227,8 +230,9 @@ namespace Novo_Semaforo
             this.panelFundo.Controls.Add(this.picFundo);
             this.panelFundo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFundo.Location = new System.Drawing.Point(0, 0);
+            this.panelFundo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelFundo.Name = "panelFundo";
-            this.panelFundo.Size = new System.Drawing.Size(796, 547);
+            this.panelFundo.Size = new System.Drawing.Size(1061, 673);
             this.panelFundo.TabIndex = 36;
             this.panelFundo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFundo_Paint_1);
             // 
@@ -237,8 +241,9 @@ namespace Novo_Semaforo
             this.picFundo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picFundo.BackgroundImage")));
             this.picFundo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picFundo.Location = new System.Drawing.Point(0, 0);
+            this.picFundo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picFundo.Name = "picFundo";
-            this.picFundo.Size = new System.Drawing.Size(796, 547);
+            this.picFundo.Size = new System.Drawing.Size(1061, 673);
             this.picFundo.TabIndex = 4;
             this.picFundo.TabStop = false;
             // 
@@ -249,15 +254,15 @@ namespace Novo_Semaforo
             // 
             // viaUnica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 547);
+            this.ClientSize = new System.Drawing.Size(1061, 673);
             this.Controls.Add(this.picPedestre);
             this.Controls.Add(this.panelTitulo);
             this.Controls.Add(this.picCarro);
             this.Controls.Add(this.panelFundo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "viaUnica";
             this.Text = "Via Única";
             this.Activated += new System.EventHandler(this.viaUnica_Activated);

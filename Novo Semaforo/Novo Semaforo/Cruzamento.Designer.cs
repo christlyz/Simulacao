@@ -188,7 +188,7 @@ namespace Novo_Semaforo
             // 
             this.picCadeirante.BackColor = System.Drawing.Color.White;
             this.picCadeirante.Image = ((System.Drawing.Image)(resources.GetObject("picCadeirante.Image")));
-            this.picCadeirante.Location = new System.Drawing.Point(466, 44);
+            this.picCadeirante.Location = new System.Drawing.Point(466, 47);
             this.picCadeirante.Margin = new System.Windows.Forms.Padding(2);
             this.picCadeirante.Name = "picCadeirante";
             this.picCadeirante.Size = new System.Drawing.Size(41, 52);

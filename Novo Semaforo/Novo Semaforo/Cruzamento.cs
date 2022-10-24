@@ -335,7 +335,7 @@ namespace Novo_Semaforo
             }
             else if (picCadeirante.Location.Y >= 638)
             {
-                picCadeirante.Location = new Point(569, -52);
+                picCadeirante.Location = new Point(466, -38);
             }
         }
 
@@ -435,7 +435,7 @@ namespace Novo_Semaforo
 
         private void btnReiniciar_Click(object sender, EventArgs e)
         {
-            picCadeirante.Location = new Point(466, 44);
+            picCadeirante.Location = new Point(466, 47);
             picPedestre.Location = new Point(135, 319);
 
             picCarroPreto.Location = new Point(241, 534);
